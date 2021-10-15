@@ -1,6 +1,9 @@
 //BOOTSTRAP'S CONFIGURATION
+$primary: #1f5fb9;
+$light: rgb(240, 242, 245);
+
 $form-label-margin-bottom: 0;
-$primary: #3a7bd5;
+$p-margin: 0;
 
 
 //STYLES
@@ -26,16 +29,23 @@ $primary: #3a7bd5;
     height: 100%;
 }
 
-.form{
-    border:  solid $primary;
+.section-card{
+    border: solid $primary;
     border-top: 3em solid $primary;
     border-top-left-radius: .5em;
     border-top-right-radius: .5em;
-    
 }
 
-.section-space{
-    height: 2em;
+.primary-text-muted{
+    color: #a4bad8;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.text-white{
+    color:white;
 }
 
 input::-webkit-outer-spin-button,
