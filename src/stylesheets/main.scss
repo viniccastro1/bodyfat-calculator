@@ -1,63 +1,66 @@
-//BOOTSTRAP'S CONFIGURATION
-$primary: #1f5fb9;
-$light: rgb(240, 242, 245);
+@import './customBootstrap.scss';
 
-$form-label-margin-bottom: 0;
-$p-margin: 0;
-
-
-//STYLES
-
+/*STYLIZATION*/
 .input-unity-label-holder{
     position: relative;
     right: 3.5em;
-}
+};
 
 .input-unity-label{
     position: absolute;
     left: 1.5em;
     top: -0.8em;
-}
+};
 
 .glass-holder{
     position:relative;
-}
+};
 
 .glass{
     position:absolute;
     width: 100%;
     height: 100%;
-}
+};
 
 .section-card{
     border: solid $primary;
     border-top: 3em solid $primary;
     border-top-left-radius: .5em;
     border-top-right-radius: .5em;
-}
+};
 
 .primary-text-muted{
     color: #a4bad8;
-}
+};
 
 .bg-white{
     background-color: white;
-}
+};
 
 .text-white{
     color:white;
-}
+};
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-}
+};
 
 input[type=number] {
     -moz-appearance:textfield; /* Firefox */
+};
+
+//MEDIA QUERIES
+@media (max-width: map-get($grid-breakpoints, lg)) {
+    .headerLogo{
+        width: 60%;
+    }
 }
 
-//REWRITES BOOTSTRAP'S CONFIGURATION
-@import "~bootstrap/scss/bootstrap";
+@media (max-width: map-get($grid-breakpoints, sm)) {
+    .headerLogo{
+        width: 100%;
+    }
+}

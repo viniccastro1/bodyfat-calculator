@@ -1,6 +1,11 @@
 import {Card} from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
 
 function Info(props) {
+
+    useEffect(() => {
+        window.scroll(0, 500);
+    });
 
     return (
         <div class='mt-5'>

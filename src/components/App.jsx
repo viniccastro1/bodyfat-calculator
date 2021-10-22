@@ -32,13 +32,7 @@ function App() {
     }
 
     //shows table
-    sethideBfTable(false);
-
-    setTimeout(function(){ 
-      window.scroll(0, 500) 
-    }, 1000);
-
-    
+    sethideBfTable(false);    
   }
 
   const [gender, setGender] = useState('male');
